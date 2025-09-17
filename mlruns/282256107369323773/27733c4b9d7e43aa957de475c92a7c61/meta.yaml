@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/282256107369323773/27733c4b9d7e43aa957de475c92a7c61/artifacts
+deleted_time: 1758135225884
+end_time: 1758134804054
+entry_point_name: ''
+experiment_id: '282256107369323773'
+lifecycle_stage: deleted
+run_id: 27733c4b9d7e43aa957de475c92a7c61
+run_name: sincere-kite-395
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758134800758
+status: 3
+tags: []
+user_id: nagen

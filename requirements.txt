@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyter
+mlflow
+dvc
+fastapi
+uvicorn
+pytest

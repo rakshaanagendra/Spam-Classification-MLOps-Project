@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/465231313378835702/494894549fd44ff0ad74938f413bcce4/artifacts
+end_time: 1758131465997
+entry_point_name: ''
+experiment_id: '465231313378835702'
+lifecycle_stage: active
+run_id: 494894549fd44ff0ad74938f413bcce4
+run_name: mysterious-vole-61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758131453011
+status: 3
+tags: []
+user_id: nagen

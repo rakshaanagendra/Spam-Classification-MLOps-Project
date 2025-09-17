@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/src/mlruns/0/2f8394f62c7c4291bb95677cd9cffc55/artifacts
+end_time: 1758108760006
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2f8394f62c7c4291bb95677cd9cffc55
+run_name: spiffy-eel-155
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758108756893
+status: 3
+tags: []
+user_id: nagen

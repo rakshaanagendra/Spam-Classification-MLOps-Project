@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/src/mlruns/0/51d1ba4bc6b14d718445b1b13da226ac/artifacts
+end_time: 1758108195444
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 51d1ba4bc6b14d718445b1b13da226ac
+run_name: blushing-chimp-30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758108192373
+status: 3
+tags: []
+user_id: nagen

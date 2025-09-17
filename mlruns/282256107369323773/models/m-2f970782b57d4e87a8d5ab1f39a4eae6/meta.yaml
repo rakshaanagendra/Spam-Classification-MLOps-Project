@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/282256107369323773/models/m-2f970782b57d4e87a8d5ab1f39a4eae6/artifacts
+creation_timestamp: 1758134572605
+experiment_id: '282256107369323773'
+last_updated_timestamp: 1758134578925
+model_id: m-2f970782b57d4e87a8d5ab1f39a4eae6
+model_type: null
+name: model
+source_run_id: 8bb414dfe96b44aa9ff65442ddd670a6
+status: 2
+status_message: null

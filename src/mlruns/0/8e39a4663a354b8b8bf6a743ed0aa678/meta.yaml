@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/src/mlruns/0/8e39a4663a354b8b8bf6a743ed0aa678/artifacts
+end_time: 1758108324325
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8e39a4663a354b8b8bf6a743ed0aa678
+run_name: rumbling-turtle-503
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758108321219
+status: 3
+tags: []
+user_id: nagen

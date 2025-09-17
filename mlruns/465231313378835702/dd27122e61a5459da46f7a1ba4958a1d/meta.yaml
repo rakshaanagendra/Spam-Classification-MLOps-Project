@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/465231313378835702/dd27122e61a5459da46f7a1ba4958a1d/artifacts
+end_time: 1758131979580
+entry_point_name: ''
+experiment_id: '465231313378835702'
+lifecycle_stage: active
+run_id: dd27122e61a5459da46f7a1ba4958a1d
+run_name: bedecked-shrew-615
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758131968926
+status: 3
+tags: []
+user_id: nagen

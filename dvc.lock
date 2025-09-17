@@ -9,11 +9,11 @@ stages:
       size: 477907
     - path: src/train_log_mlflow.py
       hash: md5
-      md5: 7839c19e089505dba06ee4fd5e56ad74
-      size: 2780
+      md5: c4c626b733c9bdc106d5186142ac98e9
+      size: 5087
     outs:
     - path: outputs
       hash: md5
-      md5: 1a1e7c7f8d2f76ccb2a4d35405cfefe3.dir
-      size: 210944
-      nfiles: 3
+      md5: 4b2bb53a92f3b529cf07c4e3b90ae84c.dir
+      size: 33028
+      nfiles: 4

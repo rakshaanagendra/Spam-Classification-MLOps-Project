@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/282256107369323773/b50940d03e574013b11450d9ead45589/artifacts
+end_time: 1758135272776
+entry_point_name: ''
+experiment_id: '282256107369323773'
+lifecycle_stage: active
+run_id: b50940d03e574013b11450d9ead45589
+run_name: LogReg_C10_Balanced
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758135269423
+status: 3
+tags: []
+user_id: nagen

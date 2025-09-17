@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/465231313378835702/046f297f404046849366cf7d0730d76c/artifacts
+end_time: 1758131906291
+entry_point_name: ''
+experiment_id: '465231313378835702'
+lifecycle_stage: active
+run_id: 046f297f404046849366cf7d0730d76c
+run_name: upbeat-chimp-490
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758131895519
+status: 3
+tags: []
+user_id: nagen

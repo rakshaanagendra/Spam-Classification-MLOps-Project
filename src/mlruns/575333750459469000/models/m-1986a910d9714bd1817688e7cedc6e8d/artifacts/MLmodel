@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/src/mlruns/575333750459469000/models/m-1986a910d9714bd1817688e7cedc6e8d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.4.0
+model_id: m-1986a910d9714bd1817688e7cedc6e8d
+model_size_bytes: 228436
+model_uuid: m-1986a910d9714bd1817688e7cedc6e8d
+prompts: null
+run_id: c266cc6e5d834f6bb4557419ecec6789
+utc_time_created: '2025-09-17 17:12:58.982888'

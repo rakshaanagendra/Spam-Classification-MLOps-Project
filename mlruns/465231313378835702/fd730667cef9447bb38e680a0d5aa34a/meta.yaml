@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/465231313378835702/fd730667cef9447bb38e680a0d5aa34a/artifacts
+end_time: 1758129590343
+entry_point_name: ''
+experiment_id: '465231313378835702'
+lifecycle_stage: active
+run_id: fd730667cef9447bb38e680a0d5aa34a
+run_name: overjoyed-ox-328
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758129579694
+status: 3
+tags: []
+user_id: nagen
