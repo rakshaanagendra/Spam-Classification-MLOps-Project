@@ -1,0 +1,8 @@
+stages:
+  train:
+    cmd: python src/train_log_mlflow.py
+    deps:
+      - src/train_log_mlflow.py
+      - data/smsspamcollection/SMSSpamCollection
+    outs:
+      -outputs
