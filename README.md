@@ -19,10 +19,16 @@ It demonstrates an **MLOps workflow** with:
 
 ## Results
 
-##Confusion matrix
+### Confusion Matrix (Best Threshold)
+The confusion matrix below shows the model’s predictions at the best threshold identified (optimized for F1 score):
+
 ![Confusion Matrix](assets/conf_matrix.png)
 
-##Threshold vs F1
+---
+
+### Threshold vs F1 Curve
+This plot shows how the F1 score varies with the decision threshold. The highlighted best threshold maximizes performance:
+
 ![Threshold vs F1](assets/threshold_f1.png)
 
 
