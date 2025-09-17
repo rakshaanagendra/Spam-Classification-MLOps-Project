@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train_log_mlflow.py
+    deps:
+    - path: data/smsspamcollection/SMSSpamCollection
+      hash: md5
+      md5: 1949b64a224790d01335c2bf8a0e48b2
+      size: 477907
+    - path: src/train_log_mlflow.py
+      hash: md5
+      md5: 7839c19e089505dba06ee4fd5e56ad74
+      size: 2780
+    outs:
+    - path: outputs
+      hash: md5
+      md5: 1a1e7c7f8d2f76ccb2a4d35405cfefe3.dir
+      size: 210944
+      nfiles: 3
