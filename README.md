@@ -19,7 +19,10 @@ It demonstrates an **MLOps workflow** with:
 
 ## Results
 
+##Confusion matrix
 ![Confusion Matrix](assets/conf_matrix.png)
+
+##Threshold vs F1
 ![Threshold vs F1](assets/threshold_f1.png)
 
 
