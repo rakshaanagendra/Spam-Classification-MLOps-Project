@@ -19,11 +19,8 @@ It demonstrates an **MLOps workflow** with:
 
 ## Results
 
-### Confusion Matrix (Best Threshold)
-![Confusion Matrix](outputs/assets/conf_matrix.png)
-
-### Threshold vs F1 Curve
-![Threshold vs F1](outputs/assets/threshold_f1.png)
+![Confusion Matrix](assets/conf_matrix.png)
+![Threshold vs F1](assets/threshold_f1.png)
 
 
 ## Setup
