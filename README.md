@@ -1,21 +1,38 @@
-# Spam Classification with MLOps
+# 📧 Spam Classification with MLOps
 
-This project classifies SMS messages as **spam** or **ham** using Logistic Regression and feature engineering.  
-It demonstrates an **MLOps workflow** with:
-- MLflow for experiment tracking,
-- DVC for reproducible pipelines,
-- Git for version control.
+## 1. Overview
+This project implements an **SMS Spam Classification** pipeline using **Machine Learning + MLOps tools**.  
+The goal is to classify incoming SMS messages as **Ham (not spam)** or **Spam**.  
 
-## Project Structure
+### 🔹 Key Highlights
+- Dataset: SMS Spam Collection (UCI ML Repository)
+- Model: Logistic Regression with TF-IDF + custom text features
+- MLOps Tools:
+  - **DVC** → Reproducible pipelines
+  - **MLflow** → Experiment tracking & metrics logging
+  - **Git/GitHub** → Version control
 
-├── data/                     # Dataset (not pushed, tracked with DVC)
-├── outputs/                  # Model outputs (metrics, artifacts)
-├── src/
-│   └── train_log_mlflow.py   # Training + MLflow logging script
-├── dvc.yaml                  # DVC pipeline definition
-├── dvc.lock                  # Pipeline lock file
-├── requirements.txt          # Python dependencies
-└── README.md
+---
+
+## Dataset
+- **Name**: SMS Spam Collection Dataset  
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
+- **Size**: 5,574 SMS messages labeled as `ham` or `spam`  
+
+---
+
+## Pipeline
+The pipeline is built with **scikit-learn** and tracked via **DVC + MLflow**:
+
+1. Data loading & preprocessing
+2. Feature engineering:
+   - TF-IDF vectorization
+   - Custom features (message length, digit count, punctuation count, uppercase ratio)
+3. Model training (Logistic Regression with class balancing & hyperparameter tuning)
+4. Threshold sweep (optimize decision threshold for best F1 score)
+5. MLflow logging (metrics + artifacts)
+6. DVC integration for reproducibility
+
 
 ## Results
 
