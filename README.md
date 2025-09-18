@@ -80,9 +80,7 @@ dvc repro
 # Launch MLflow UI
 mlflow ui --backend-store-uri ./mlruns --host 127.0.0.1 --port 5000
 
----
-
-### 6. Dockerized deployment
+# Dockerized deployment
 
 ```powershell
 # Build Docker image
