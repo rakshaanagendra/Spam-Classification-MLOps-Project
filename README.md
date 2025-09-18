@@ -5,36 +5,38 @@ This project implements an **SMS Spam Classification** pipeline using **Machine 
 The goal is to classify incoming SMS messages as **Ham (not spam)** or **Spam**.  
 
 ### 🔹 Key Highlights
-- Dataset: SMS Spam Collection (UCI ML Repository)
-- Model: Logistic Regression with TF-IDF + custom text features
-- MLOps Tools:
-  - **DVC** → Reproducible pipelines
-  - **MLflow** → Experiment tracking & metrics logging
-  - **Git/GitHub** → Version control
+- **Dataset**: SMS Spam Collection (UCI ML Repository)
+- **Model**: Logistic Regression with TF-IDF + threshold optimization
+- **MLOps Tools**:
+  - [x] **DVC** → Reproducible pipelines  
+  - [x] **MLflow** → Experiment tracking & metrics logging  
+  - [x] **Docker** → Containerized FastAPI deployment  
+  - [x] **Git/GitHub** → Version control  
 
 ---
 
-## Dataset
+## 2. Dataset
 - **Name**: SMS Spam Collection Dataset  
-- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
+- **Source**: [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
 - **Size**: 5,574 SMS messages labeled as `ham` or `spam`  
 
 ---
 
-## Pipeline
+## 3. Pipeline
 The pipeline is built with **scikit-learn** and tracked via **DVC + MLflow**:
 
-1. Data loading & preprocessing
+1. Data loading & preprocessing  
 2. Feature engineering:
-   - TF-IDF vectorization
-   - Custom features (message length, digit count, punctuation count, uppercase ratio)
-3. Model training (Logistic Regression with class balancing & hyperparameter tuning)
-4. Threshold sweep (optimize decision threshold for best F1 score)
-5. MLflow logging (metrics + artifacts)
-6. DVC integration for reproducibility
+   - TF-IDF vectorization  
+   - Custom text features (message length, digit count, punctuation count, uppercase ratio)  
+3. Model training (Logistic Regression with class balancing & hyperparameter tuning)  
+4. **Threshold sweep** (optimize decision threshold for best F1 score)  
+5. MLflow logging (metrics + artifacts)  
+6. DVC integration for reproducibility  
 
+---
 
-## Results
+## 4. Results
 
 ### Confusion Matrix (Best Threshold)
 The confusion matrix below shows the model’s predictions at the best threshold identified (optimized for F1 score):
@@ -48,9 +50,20 @@ This plot shows how the F1 score varies with the decision threshold. The highlig
 
 ![Threshold vs F1](assets/threshold_f1.png)
 
+---
 
-## Setup
-```bash
+### Swagger UI (FastAPI)
+The trained model is deployed via **FastAPI + Docker**.  
+Swagger UI provides an interactive interface for prediction and hot-reloading models:
+
+![Swagger UI](assets/swagger_ui.png)
+
+---
+
+### 5. Setup
+
+### Clone and environment
+```powershell
 # Clone repo
 git clone https://github.com/your-username/Spam-Classification-MLOps-Project.git
 cd Spam-Classification-MLOps-Project
@@ -65,6 +78,23 @@ pip install -r requirements.txt
 dvc repro
 
 # Launch MLflow UI
-mlflow ui --backend-store-uri sqlite:///mlflow.db
+mlflow ui --backend-store-uri ./mlruns --host 127.0.0.1 --port 5000
+
+---
+
+### 6. Dockerized deployment
+
+```powershell
+# Build Docker image
+docker build -t spam-classifier:latest .
+
+# Stop/remove old container
+docker stop spam-api
+docker rm spam-api
+
+# Run new container (maps port 8000, mounts outputs/)
+docker run -d --restart unless-stopped -p 8000:8000 `
+  -v C:\path\to\Spam-Classification-MLOps-Project\outputs:/app/outputs `
+  --name spam-api spam-classifier:latest
 
 
