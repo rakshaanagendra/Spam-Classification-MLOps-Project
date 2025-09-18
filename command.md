@@ -26,6 +26,12 @@ docker run -d --restart unless-stopped -p 8000:8000 ` -v C:\Users\nagen\Desktop\
 
 
 ## ⚡ Reload model
+# Normally, FastAPI app loads the trained model when the container starts.
+#Docker starts → main.py loads model.pkl, vectorizer.pkl, threshold.json.
+#If you retrain later and produce new versions of those files → the running container still uses the old model (until you restart Docker).
+#A /reload-model endpoint fixes that:
+#It tells the API to re-read the files from outputs/ while the container is still running.
+#No need to stop/start Docker.
 
 Invoke-RestMethod -Method POST -Uri "http://localhost:8000/reload-model"
 

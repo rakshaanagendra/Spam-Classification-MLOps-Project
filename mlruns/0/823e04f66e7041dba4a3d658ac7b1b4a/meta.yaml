@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nagen/Desktop/Kaggle_datasets/SMS%20Spam%20collection/Spam-Classification-MLOps-Project/mlruns/0/823e04f66e7041dba4a3d658ac7b1b4a/artifacts
+end_time: 1758188391904
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 823e04f66e7041dba4a3d658ac7b1b4a
+run_name: unleashed-grouse-173
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758188388805
+status: 3
+tags: []
+user_id: nagen

@@ -8,7 +8,7 @@ import mlflow                                # MLflow for experiment tracking
 import mlflow.sklearn                        # MLflow helper for sklearn models
 
 # 2. Load dataset
-data = pd.read_csv(r"C:\Users\nagen\Desktop\Kaggle_datasets\SMS Spam collection\Spam-Classification-MLOps-Project\data\smsspamcollection\SMSSpamCollection",
+data = pd.read_csv(r"C:\Users\nagen\Desktop\Kaggle_datasets\SMS-Spam-collection\Spam-Classification-MLOps-Project\data\smsspamcollection\SMSSpamCollection",
                    sep="\t", header=None, names=["label", "message"])
 
 # -  read the dataset as a DataFrame.
@@ -67,3 +67,18 @@ with mlflow.start_run():
 
     # Log model
     mlflow.sklearn.log_model(model, "spam_model")
+
+   # --- Save model and vectorizer locally for API ---
+    import joblib, os
+
+    # resolve path to ../outputs (relative to src/)
+    OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "outputs")
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    joblib.dump(model, os.path.join(OUTPUT_DIR, "model.pkl"))
+    joblib.dump(vectorizer, os.path.join(OUTPUT_DIR, "vectorizer.pkl"))
+
+    print(f"✅ Model and vectorizer saved to {OUTPUT_DIR}")
+
+
+

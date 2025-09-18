@@ -1,0 +1,19 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.env
+venv/
+.envrc
+dist/
+build/
+*.egg-info
+.git
+.gitignore
+.dvc/
+.mlruns/
+mlruns/
+__MACOSX
+*.log
+outputs/assets/*    # if you want to avoid embedding heavy images; optional
